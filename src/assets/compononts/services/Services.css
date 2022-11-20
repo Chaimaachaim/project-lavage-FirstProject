@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.services{
+    background-color: black;
+    width: 100%;
+    height: 170vh;
+display: flex;
+
+    flex-direction: column;
+}
+.anm{
+ color:white;
+ font-size: 19rem;
+}
+
+.contai{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 100%;
+    -moz-column-width:100% ;
+    column-width: 100%;
+    padding: 0.8rem;
+    gap: 136px;
+    display: flex;
+  
+    flex-wrap: wrap;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+   
+
+}
+.card{
+    height: 100%;
+    width: 350px;
+     justify-content: center;
+     align-items: center;
+margin: auto;
+position: relative;
+transition: transform 800ms  ;
+transform-style:preserve-3d ;
+
+}
+#img5{
+    width: 360px;
+}
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50,50, 50, 0.25);
+    position: absolute;
+   backface-visibility: hidden;
+  
+
+}
+
+.front img {
+    width: 100% ;
+    display: flex;
+    border-radius: 80px;
+}
+
+.back{
+    color: #fff;
+
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+    transform: rotateY(180deg);
+}
+.back h2{
+ font-size: 50px;
+ letter-spacing: 7px;
+
+}
+
+.back p{
+    margin-top: 30px;
+    font-size: 19px;
+}
+.line-r{
+    height: 300px;
+    margin-top: 500px;
+
+}
+
+.line-r::after {
+    content: '';
+    position:relative;
+    display: block;
+    top: 150%;
+    left: 28.3%;
+    width: 20.5%;
+    height: 3px;
+    background: #fff;
+    z-index: 2;
+    transform-origin:auto;
+    transform: scaleX(1),scaleY(1) ;
+    animation: animate 2s infinite;
+}
+.line-f{
+    margin-top: 80px;
+}
+
+.line-f::after {
+    content: '';
+    position:relative;
+    display: block;
+    top: 150%;
+    left: 70.3%;
+    width: 20.5%;
+    height: 3px;
+    background: #fff;
+    z-index: 2;
+    transform-origin:auto;
+    transform: scaleX(1),scaleY(1) ;
+  animation: animate 2s infinite ;
+
+}
+.line-v{
+    margin-top: 130px;
+}
+
+.line-v::after {
+    content: '';
+    position:relative;
+    display: block;
+    top: 150%;
+    left: 10.3%;
+    width: 20.5%;
+    height: 3px;
+    background: #fff;
+    z-index: 2;
+    transform-origin:auto;
+    transform: scaleX(1),scaleY(1) ;
+    animation: animate 2s infinite;
+
+}
+
+
